@@ -1,4 +1,4 @@
-﻿[![Build Status](https://travis-ci.org/wormple12/Sem3-Exam.svg?branch=master)](https://travis-ci.org/wormple12/Sem3-Exam)
+﻿[![Build Status](https://travis-ci.org/Rasm-P/Sem3Exam.svg?branch=master)](https://travis-ci.org/Rasm-P/Sem3Exam)
 
 Travis fails almost every time due to a "Bad Gateway" issue. Might have something to do with a dependency that it can't find. But it cleans, builds and deploys successfully, and everything works.
 
@@ -8,7 +8,7 @@ API:
 =====================
 Back end deployed at: https://barfodpraetorius.dk/Sem3Exam
 
-Front end deployed at http://teamone-sem3-exam-project.surge.sh
+Front end deployed at http://teamonesem3exam.surge.sh
 
 Open API: https://barfodpraetorius.dk/Sem3Exam/openapi/
 
