@@ -1,0 +1,50 @@
+package rest;
+
+import io.swagger.v3.jaxrs2.integration.resources.AcceptHeaderOpenApiResource;
+import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
+import java.util.Set;
+import javax.ws.rs.core.Application;
+
+@javax.ws.rs.ApplicationPath("api")
+public class ApplicationConfig extends Application {
+
+    @Override
+    public Set<Class<?>> getClasses() {
+        Set<Class<?>> resources = new java.util.HashSet<>();
+        addRestResourceClasses(resources);
+        
+        //These two Resource Classes are not auto discovered so we add them manually
+        resources.add(OpenApiResource.class);
+        resources.add(AcceptHeaderOpenApiResource.class);
+
+        return resources;
+    }
+
+    /**
+     * Do not modify addRestResourceClasses() method. It is automatically
+     * populated with all resources defined in the project. If required, comment
+     * out calling this method in getClasses().
+     */
+    private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(cors.CorsRequestFilter.class);
+        resources.add(cors.CorsResponseFilter.class);
+        resources.add(errorhandling.AuthenticationExceptionMapper.class);
+        resources.add(errorhandling.GenericExceptionMapper.class);
+        resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
+        resources.add(rest.ChassisResource.class);
+        resources.add(rest.ComputerResource.class);
+        resources.add(rest.CoolingResource.class);
+        resources.add(rest.CpuResource.class);
+        resources.add(rest.DiskdriveResource.class);
+        resources.add(rest.GpuResource.class);
+        resources.add(rest.MotherboardResource.class);
+        resources.add(rest.PsuResource.class);
+        resources.add(rest.RamResource.class);
+        resources.add(rest.SoftwareResource.class);
+        resources.add(security.JWTAuthenticationFilter.class);
+        resources.add(security.LoginEndpoint.class);
+        resources.add(security.RolesAllowedFilter.class);
+        
+    }
+
+}
