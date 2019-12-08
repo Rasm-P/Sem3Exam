@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/wormple12/Sem3-Exam.svg?branch=master)](https://travis-ci.org/wormple12/Sem3-Exam)
+﻿[![Build Status](https://travis-ci.org/wormple12/Sem3-Exam.svg?branch=master)](https://travis-ci.org/wormple12/Sem3-Exam)
 
 Travis fails almost every time due to a "Bad Gateway" issue. Might have something to do with a dependency that it can't find. But it cleans, builds and deploys successfully, and everything works.
 
 3. Semester, Exam
-
+ 
 API:
 =====================
 Back end deployed at: https://barfodpraetorius.dk/Sem3Exam
