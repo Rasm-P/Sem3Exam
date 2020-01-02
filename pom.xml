@@ -7,7 +7,7 @@
     <version>1</version>
     <packaging>war</packaging>
 
-    <name>Sem3Exam</name>
+    <name>Sem3Exam(Rasmus)</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -15,7 +15,7 @@
         
         <!-- TODO: Change the URL to your own tomcat server. Used to deploy your WAR-file 
         -->
-        <remote.server>http://157.230.21.103/manager/text</remote.server>
+        <remote.server>https://barfodpraetorius.dk/manager/text</remote.server>
         
     </properties>
     
