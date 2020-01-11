@@ -8,7 +8,7 @@ API:
 =====================
 Back end deployed at: https://barfodpraetorius.dk/Sem3Exam
 
-Front end deployed at http://teamonesem3exam.surge.sh
+Front end deployed at https://teamonesem3exam.surge.sh
 
 Open API: https://barfodpraetorius.dk/Sem3Exam/openapi/
 
